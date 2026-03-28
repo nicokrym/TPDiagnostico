@@ -1,0 +1,49 @@
+---
+const { team } = Astro.props;
+---
+
+<div class="card" style={`background-color: ${team.colores.principal}`}>
+  <img src={team.logo} alt={`Logo ${team.nombre}`} />
+  <h2>{team.nombre}</h2>
+  <p>{team.ultimoRecord}</p>
+</div>
+
+<style>
+  .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 280px;
+    height: 380px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+  }
+
+  .card img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+  }
+
+  .card h2 {
+    color: white;
+    font-size: 1.8rem;
+    margin: 1rem 0 0.3rem;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  }
+
+  .card p {
+    color: white;
+    font-size: 1rem;
+    opacity: 0.85;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+  }
+</style>
