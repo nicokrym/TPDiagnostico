@@ -1,5 +1,5 @@
 ---
-import TeamCard from '../components/TeamCard.astro';
+import Carousel from '../components/Carrusel.astro';
 import { teams } from '../data/equipos.js';
 ---
 
@@ -7,8 +7,35 @@ import { teams } from '../data/equipos.js';
   <head>
     <meta charset="utf-8" />
     <title>NFL Teams</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0f0f0f;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 3rem;
+      }
+      
+        h1 {
+          color: white;
+          font-size: 2.5rem;
+          padding: 0 3rem !important;
+          text-shadow: 2px 2px 6px rgba(255,255,255,0.3);
+        }
+    </style>
   </head>
   <body>
-    <TeamCard team={teams[0]} />
+    <h1>La NFL y sus equipos: el catálogo.</h1>
+    <Carousel teams={teams} />
   </body>
 </html>

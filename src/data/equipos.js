@@ -140,8 +140,8 @@ export const teams = [
     conferencia: "AFC",
     division: "East",
     colores: {
-      principal: "#125740",
-      segundo: "#000000",
+      principal: "#000000",
+      segundo: "#125740",
       tercero: "#FFFFFF",
     },
     figura: "Garrett Wilson",
@@ -368,8 +368,8 @@ export const teams = [
     conferencia: "NFC",
     division: "East",
     colores: {
-      principal: "#0B2265",
-      segundo: "#A71930",
+      principal: "#A71930",
+      segundo: "#0B2265",
       tercero: "#A5ACAF",
     },
     figura: "Malik Nabers",
