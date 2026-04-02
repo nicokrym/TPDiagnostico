@@ -1,0 +1,200 @@
+---
+import { teams } from '../../data/equipos.js';
+
+export function getStaticPaths() {
+  return teams.map((team) => ({
+    params: { id: team.id },
+  }));
+}
+
+const { id } = Astro.params;
+const team = teams.find((t) => t.id === id);
+
+if (!team) {
+  return Astro.redirect('/');
+}
+---
+
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <title>{team.nombreCompleto}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: #0f0f0f;
+        min-height: 100vh;
+        padding: 3rem !important;
+        color: white;
+      }
+
+      .back-btn {
+        display: inline-block;
+        padding: 0.7rem 1.5rem;
+        background-color: #1e1e1e;
+        color: white;
+        border-radius: 10px;
+        text-decoration: none;
+        font-size: 0.95rem;
+        transition: background-color 0.2s ease;
+        margin-bottom: 2rem;
+      }
+
+      .back-btn:hover {
+        background-color: #2a2a2a;
+      }
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 900;
+        margin-bottom: 2.5rem;
+      }
+
+      .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+      }
+
+      .left {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .logo-box {
+        height: 300px;
+        border-radius: 20px;
+        padding: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .logo-box img {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+      }
+
+      .info-box {
+        height: 300px;
+        background-color: #1e1e1e;
+        border-radius: 20px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .info-row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+      }
+
+      .info-row span:first-child {
+        font-size: 0.85rem;
+        color: rgba(255,255,255,0.4);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+
+      .info-row span:last-child {
+        font-size: 1.2rem;
+        font-weight: 600;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .details-box {
+        height: 300px;
+        background-color: #1e1e1e;
+        border-radius: 20px;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .colors-box {
+        display: flex;
+        gap: 1rem;
+      }
+
+      .color-swatch {
+        flex: 1;
+        height: 120px;
+        border-radius: 16px;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="/" class="back-btn">Volver</a>
+    <h1>{team.nombreCompleto}</h1>
+
+    <div class="layout">
+      <div class="left">
+        <div class="logo-box" style={`background-color: ${team.colores.principal}`}>
+          <img src={team.logo} alt={`Logo ${team.nombre}`} />
+        </div>
+        <div class="info-box">
+          <div class="info-row">
+            <span>Figura</span>
+            <span>{team.figura}</span>
+          </div>
+          <div class="info-row">
+            <span>Head Coach</span>
+            <span>{team.headCoach}</span>
+          </div>
+          <div class="info-row">
+            <span>Record 2025</span>
+            <span>{team.ultimoRecord}</span>
+          </div>
+          <div class="info-row">
+            <span>Super Bowls</span>
+            <span>{team.superBowls}</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="right">
+        <div class="details-box">
+          <div class="info-row">
+            <span>Ciudad</span>
+            <span>{team.ciudad}</span>
+          </div>
+          <div class="info-row">
+            <span>Estadio</span>
+            <span>{team.estadio}</span>
+          </div>
+          <div class="info-row">
+            <span>Conferencia</span>
+            <span>{team.conferencia}</span>
+          </div>
+          <div class="info-row">
+            <span>División</span>
+            <span>{team.division}</span>
+          </div>
+        </div>
+        <div class="colors-box">
+          <div class="color-swatch" style={`background-color: ${team.colores.principal}`}></div>
+          <div class="color-swatch" style={`background-color: ${team.colores.segundo}`}></div>
+          <div class="color-swatch" style={`background-color: ${team.colores.tercero}`}></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

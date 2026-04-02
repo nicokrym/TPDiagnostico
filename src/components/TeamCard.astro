@@ -2,11 +2,13 @@
 const { team } = Astro.props;
 ---
 
-<div class="card" style={`background-color: ${team.colores.principal}`}>
-  <img src={team.logo} alt={`Logo ${team.nombre}`} />
-  <h2>{team.nombre}</h2>
-  <p>{team.ultimoRecord}</p>
-</div>
+<a href={`/equipos/${team.id}`} style="text-decoration: none;">
+  <div class="card" style={`background-color: ${team.colores.principal}`}>
+    <img src={team.logo} alt={`Logo ${team.nombre}`} />
+    <h2>{team.nombre}</h2>
+    <p>{team.ultimoRecord}</p>
+  </div>
+</a>
 
 <style>
   .card {

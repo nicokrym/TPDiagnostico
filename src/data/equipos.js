@@ -296,7 +296,7 @@ export const teams = [
       segundo: "#FFFFFF",
       tercero: "#D7090B",
     },
-    figura: "Cam Ward",
+    figura: "Jeffery Simmons",
     estadio: "Nissan Stadium",
     headCoach: "Robert Saleh",
     superBowls: 0,
