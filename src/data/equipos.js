@@ -331,8 +331,8 @@ export const teams = [
     division: "East",
     colores: {
       principal: "#003594",
-      segundo: "#041E42",
-      tercero: "#869397",
+      segundo: "#869397",
+      tercero: "#041E42",
     },
     figura: "CeeDee Lamb",
     estadio: "AT&T Stadium",
