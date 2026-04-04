@@ -200,7 +200,34 @@ export const teams = [
     headCoach: "Mike Vrabel",
     superBowls: 6,
     ultimoRecord: "14-3-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ne.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los New England Patriots?",
+        opciones: ["4", "5", "6", "7"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Patriots a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Cuántos Super Bowls ganó Tom Brady con los Patriots?",
+        opciones: ["4", "5", "6", "7"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Con qué pick fue drafteado Tom Brady en 2000?",
+        opciones: ["Pick 70", "Pick 124", "Pick 199", "Pick 245"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Cuál es la famosa frase/filosofía asociada a Bill Belichick?",
+        opciones: ["Just Win Baby", "Do Your Job", "In Bill We Trust", "One Game At A Time"],
+        correcta: 1
+      },
+    ],
   },
   {
     id: "bills",
@@ -219,7 +246,34 @@ export const teams = [
     headCoach: "Joe Brady",
     superBowls: 0,
     ultimoRecord: "12-5-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/buf.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Buffalo Bills?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Bills a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Cuántas veces consecutivas fueron los Bills al Super Bowl en los 90s?",
+        opciones: ["2", "3", "4", "5"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Con qué pick fue drafteado Josh Allen en 2018?",
+        opciones: ["Pick 1", "Pick 7", "Pick 12", "Pick 21"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A qué universidad fue Josh Allen?",
+        opciones: ["Alabama", "Ohio State", "Wyoming", "Fresno State"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "dolphins",
@@ -238,7 +292,34 @@ export const teams = [
     headCoach: "Jeff Haffley",
     superBowls: 2,
     ultimoRecord: "7-10-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/mia.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Miami Dolphins?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Clasificaron los Dolphins a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿En qué año tuvieron la única temporada perfecta de la historia de la NFL?",
+        opciones: ["1969", "1970", "1972", "1975"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Quién era el head coach de los Dolphins en su temporada perfecta?",
+        opciones: ["Tom Landry", "Don Shula", "Chuck Noll", "Bud Grant"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cómo se llama la icónica jugada de los Dolphins contra los Patriots en 2018?",
+        opciones: ["The Miracle Play", "The Miami Miracle", "The Dolphins Miracle", "The Perfect Play"],
+        correcta: 1
+      },
+    ],
   },
   {
     id: "jets",
@@ -257,7 +338,34 @@ export const teams = [
     headCoach: "Aaron Glenn",
     superBowls: 1,
     ultimoRecord: "3-14-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/nyj.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los New York Jets?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Clasificaron los Jets a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué legendario QB garantizó públicamente la victoria en el Super Bowl III?",
+        opciones: ["Fran Tarkenton", "Joe Namath", "Johnny Unitas", "Len Dawson"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A qué universidad fue Garrett Wilson?",
+        opciones: ["Michigan", "Alabama", "Ohio State", "Georgia"],
+        correcta: 2
+      },
+      {
+        pregunta: "Verdadero o Falso: los Jets son el equipo con más tiempo sin clasificar a playoffs.",
+        opciones: ["Verdadero", "Falso"],
+        correcta: 0
+      },
+    ],
   },
   {
     id: "steelers",
