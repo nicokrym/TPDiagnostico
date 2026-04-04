@@ -46,6 +46,7 @@ if (!team) {
         font-size: 0.95rem;
         transition: background-color 0.2s ease;
         margin-bottom: 2rem;
+        cursor: pointer;
       }
 
       .back-btn:hover {
@@ -159,7 +160,7 @@ if (!team) {
     </style>
   </head>
   <body>
-    <a href="/" class="back-btn">Volver</a>
+    <a class="back-btn" onclick="history.back()">Volver</a>
     <h1>{team.nombreCompleto}</h1>
 
     <div class="layout">
@@ -212,7 +213,7 @@ if (!team) {
             <div class="color-swatch" style={`background-color: ${team.colores.segundo}`}></div>
             <div class="color-swatch" style={`background-color: ${team.colores.tercero}`}></div>
           </div>
-          <div class="trivia" style={`background-color: ${team.colores.principal}`}>
+          <div class="trivia" onclick={`window.location.href='/${team.id}/trivia'`} style={`background-color: ${team.colores.principal}; color: ${team.colores.segundo}`}">
             <h2 style="font-size: 1.5rem; font-weight: 700">Jugar trivia</h2>
           </div>
         </div>

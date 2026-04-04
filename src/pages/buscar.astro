@@ -139,15 +139,17 @@ import { teams } from '../data/equipos.js';
     <p class="no-results" id="noResults">No se encontraron equipos.</p>
     <div class="results" id="results">
       {teams.map((team) => (
-        <div 
-          class="card" 
-          data-name={team.nombreCompleto.toLowerCase()}
-          style={`background-color: ${team.colores.principal}`}
-        >
-          <img src={team.logo} alt={`Logo ${team.nombre}`} />
-          <h2>{team.nombre}</h2>
-          <p>{team.ultimoRecord}</p>
-        </div>
+        <a href={`/${team.id}/`} style="text-decoration: none;">
+          <div 
+            class="card" 
+            data-name={team.nombreCompleto.toLowerCase()}
+            style={`background-color: ${team.colores.principal}`}
+          >
+            <img src={team.logo} alt={`Logo ${team.nombre}`} />
+            <h2>{team.nombre}</h2>
+            <p>{team.ultimoRecord}</p>
+          </div>
+        </a>
       ))}
     </div>
 

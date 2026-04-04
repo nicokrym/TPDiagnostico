@@ -16,7 +16,34 @@ export const teams = [
     headCoach: "Sean Payton",
     superBowls: 3,
     ultimoRecord: "14-3-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/den.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/den.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Denver Broncos?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Broncos a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Quién fue el famoso jugador número 88 de los Broncos?",
+        opciones: ["Shannon Sharpe", "Demaryius Thomas", "Rod Smith", "Ed McCaffrey"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué famoso QB draftearon con el pick #1 del draft de 1983?",
+        opciones: ["Dan Marino", "Jim Kelly", "John Elway", "Peyton Manning"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿A qué altura sobre el nivel del mar se encuentra su estadio?",
+        opciones: ["3.280 pies", "4.500 pies", "5.280 pies", "2.100 pies"],
+        correcta: 2
+      }
+    ],
   },
   {
     id: "chargers",
@@ -35,7 +62,34 @@ export const teams = [
     headCoach: "Jim Harbaugh",
     superBowls: 0,
     ultimoRecord: "11-6-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/lac.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Chargers?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Chargers a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿De qué ciudad eran los Chargers antes de mudarse a Los Angeles?",
+        opciones: ["Oakland", "San Diego", "San Jose", "Sacramento"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A quién draftearon los Chargers en primera ronda del draft 2025?",
+        opciones: ["Ashton Jeanty", "Omarion Hampton", "Quinshon Judkins", "TreVeyon Henderson"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué equipo dirige John Harbaugh, hermano del HC de los Chargers?",
+        opciones: ["Pittsburgh Steelers", "Cleveland Browns", "New York Giants", "Baltimore Ravens"],
+        correcta: 3
+      }
+    ]
   },
   {
     id: "chiefs",
@@ -46,15 +100,42 @@ export const teams = [
     division: "West",
     colores: {
       principal: "#E31837",
-      segundo: "#FFB81C",
-      tercero: "#FFFFFF",
+      segundo: "#FFFFFF",
+      tercero: "#FFB81C",
     },
     figura: "Patrick Mahomes",
     estadio: "Arrowhead Stadium",
     headCoach: "Andy Reid",
     superBowls: 4,
     ultimoRecord: "6-11-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/kc.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Kansas City Chiefs?",
+        opciones: ["2", "3", "4", "5"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Chiefs a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿En qué año ganaron su primer Super Bowl de la era Mahomes?",
+        opciones: ["2018", "2019", "2020", "2021"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Cuál fue el único Super Bowl que ganaron sin Mahomes?",
+        opciones: ["Super Bowl I", "Super Bowl IV", "Super Bowl XII", "Super Bowl XXIII"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Con qué pick del draft fue seleccionado Patrick Mahomes en 2017?",
+        opciones: ["Pick 1", "Pick 5", "Pick 10", "Pick 27"],
+        correcta: 2
+      }
+    ]
   },
   {
     id: "raiders",
@@ -73,7 +154,34 @@ export const teams = [
     headCoach: "Klint Kubiak",
     superBowls: 3,
     ultimoRecord: "3-14-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/lv.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Las Vegas Raiders?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Raiders a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿En qué ciudad jugaban los Raiders antes de mudarse a Las Vegas?",
+        opciones: ["San Diego", "Oakland", "Sacramento", "San Francisco"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué famoso ex jugador tiene una participación en la propiedad de los Raiders?",
+        opciones: ["Peyton Manning", "Tom Brady", "Brett Favre", "Drew Brees"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Quién es el joven TE estrella que los Raiders draftearon en 2024?",
+        opciones: ["Brock Bowers", "Colston Loveland", "Jack Bech", "Sam LaPorta"],
+        correcta: 0
+      }
+    ]
   },
   {
     id: "patriots",
@@ -122,8 +230,8 @@ export const teams = [
     division: "East",
     colores: {
       principal: "#008E97",
-      segundo: "#FC4C02",
-      tercero: "#005778",
+      segundo: "#FFFFFF",
+      tercero: "#FC4C02",
     },
     figura: "De'Von Achane",
     estadio: "Hard Rock Stadium",
@@ -483,8 +591,8 @@ export const teams = [
     division: "South",
     colores: {
       principal: "#D50A0A",
-      segundo: "#FF7900",
-      tercero: "#0A0A08",
+      segundo: "#0A0A08",
+      tercero: "#B1BABF",
     },
     figura: "Baker Mayfield",
     estadio: "Raymond James Stadium",
@@ -597,8 +705,8 @@ export const teams = [
     division: "West",
     colores: {
       principal: "#97233F",
-      segundo: "#000000",
-      tercero: "#FFB612",
+      segundo: "#FFFFFF",
+      tercero: "#000000",
     },
     figura: "Trey McBride",
     estadio: "State Farm Stadium",
