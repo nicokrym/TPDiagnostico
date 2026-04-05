@@ -42,7 +42,6 @@ if (!team) {
         background-color: #1e1e1e;
         color: white;
         border-radius: 10px;
-        text-decoration: none;
         font-size: 0.95rem;
         transition: background-color 0.2s ease;
         margin-bottom: 2rem;
@@ -54,16 +53,32 @@ if (!team) {
         background-color: #2a2a2a;
       }
 
+      .opcion {
+        padding: 0.7rem 1.5rem;
+        background-color: #1e1e1e;
+        color: white;
+        border-radius: 10px;
+        border: none;
+        font-size: 0.95rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background-color 0.2s ease;
+      }
+
+      .opcion:hover {
+        background-color: #2a2a2a;
+      }
+
       h1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
         font-weight: 900;
         margin-bottom: 0.5rem;
       }
 
       h2 {
-        font-size: 1.2rem;
-        font-weight: 400;
+        font-size: 1rem;
         color: rgba(255,255,255,0.4);
+        font-weight: 400;
         margin-bottom: 3rem;
       }
     </style>
@@ -72,5 +87,21 @@ if (!team) {
     <button class="back-btn" onclick="history.back()">Volver</button>
     <h1>Trivia</h1>
     <h2>{team.nombreCompleto}</h2>
+    <p id="pregunta"></p>
+    <div class="opciones" id="opciones"></div>
   </body>
+  <script define:vars={{ trivia: team.trivia }}>
+    const q = trivia[0];
+
+    document.getElementById('pregunta').textContent = q.pregunta;
+
+    const opcionesDiv = document.getElementById('opciones');
+
+    q.opciones.forEach((opcion) => {
+      const btn = document.createElement('button');
+      btn.textContent = opcion;
+      opcionesDiv.appendChild(btn);
+      btn.className = 'opcion';
+    });
+  </script>
 </html>
