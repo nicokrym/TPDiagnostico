@@ -87,7 +87,7 @@ export const teams = [
       {
         pregunta: "¿Qué equipo dirige John Harbaugh, hermano del HC de los Chargers?",
         opciones: ["Pittsburgh Steelers", "Cleveland Browns", "New York Giants", "Baltimore Ravens"],
-        correcta: 3
+        correcta: 2
       }
     ]
   },
@@ -384,7 +384,34 @@ export const teams = [
     headCoach: "Mike McCarthy",
     superBowls: 6,
     ultimoRecord: "10-7-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/pit.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Pittsburgh Steelers?",
+        opciones: ["4", "5", "6", "7"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Steelers a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Cómo se llama la famosa defensa de los Steelers de los 70s?",
+        opciones: ["Steel Curtain", "Purple People Eaters", "Doomsday Defense", "No-Name Defense"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Cuál era el apodo del famoso QB Ben Roethlisberger?",
+        opciones: ["Big Ben", "The Beard", "Iron Ben", "Big Boy"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿A qué equipo fue tradeado George Pickens en 2025?",
+        opciones: ["Los Angeles Rams", "Miami Dolphins", "Dallas Cowboys", "New York Giants"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "ravens",
@@ -403,7 +430,34 @@ export const teams = [
     headCoach: "Jesse Minter",
     superBowls: 2,
     ultimoRecord: "8-9-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/bal.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Baltimore Ravens?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Clasificaron los Ravens a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Quién es el actual head coach de los Baltimore Ravens?",
+        opciones: ["Mike Macdonald", "Jesse Minter", "John Harbaugh", "Zac Taylor"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué legendario LB retiró su número 52 los Ravens?",
+        opciones: ["Ed Reed", "Ray Lewis", "Terrell Suggs", "Peter Boulware"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿En qué año ganó Lamar Jackson su primer MVP?",
+        opciones: ["2018", "2019", "2020", "2021"],
+        correcta: 1
+      },
+    ],
   },
   {
     id: "bengals",
@@ -422,7 +476,34 @@ export const teams = [
     headCoach: "Zac Taylor",
     superBowls: 0,
     ultimoRecord: "6-11-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/cin.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Cincinnati Bengals?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Bengals a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿En qué año llegaron los Bengals al Super Bowl con Joe Burrow?",
+        opciones: ["2020", "2021", "2022", "2023"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿A qué universidad fue Joe Burrow?",
+        opciones: ["Alabama", "Georgia", "LSU", "Ohio State"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿A quién draftearon los Bengals en primera ronda del draft 2025?",
+        opciones: ["Mason Graham", "Shemar Stewart", "Darius Alexander", "James Pearce Jr."],
+        correcta: 1
+      },
+    ],
   },
   {
     id: "browns",
@@ -441,7 +522,34 @@ export const teams = [
     headCoach: "Todd Monken",
     superBowls: 0,
     ultimoRecord: "5-12-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/cle.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Cleveland Browns?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Browns a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿De quién toman el nombre los Cleveland Browns?",
+        opciones: ["Jim Brown", "Paul Brown", "Art Modell", "Otto Graham"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué legendario RB jugó para los Browns en los 60s?",
+        opciones: ["O.J. Simpson", "Gale Sayers", "Jim Brown", "Earl Campbell"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿A quién draftearon los Browns con el pick #1 overall en 2018?",
+        opciones: ["Myles Garrett", "Sam Darnold", "Baker Mayfield", "Josh Allen"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "jaguars",
@@ -460,7 +568,34 @@ export const teams = [
     headCoach: "Liam Coen",
     superBowls: 0,
     ultimoRecord: "13-4-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/jax.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Jacksonville Jaguars?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Jaguars a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Contra qué equipo fueron sus únicas 3 derrotas en la temporada 1999-2000?",
+        opciones: ["New England Patriots", "Tennessee Titans", "Pittsburgh Steelers", "Denver Broncos"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué famoso RB jugó para los Jaguars en sus años dorados?",
+        opciones: ["Eddie George", "Fred Taylor", "Jamal Lewis", "Warrick Dunn"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A qué universidad fue Trevor Lawrence?",
+        opciones: ["Alabama", "Georgia", "Clemson", "LSU"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "texans",
@@ -479,7 +614,34 @@ export const teams = [
     headCoach: "DeMeco Ryans",
     superBowls: 0,
     ultimoRecord: "12-5-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/hou.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Houston Texans?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Texans a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿En qué año debutó el equipo en la NFL?",
+        opciones: ["1999", "2000", "2002", "2004"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué famoso DE fue la gran figura del equipo en sus primeros años?",
+        opciones: ["Mario Williams", "J.J. Watt", "Jadeveon Clowney", "Whitney Mercilus"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A quién draftearon los Texans con el pick #2 overall en 2023?",
+        opciones: ["Bryce Young", "Will Anderson Jr.", "C.J. Stroud", "Anthony Richardson"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "colts",
@@ -498,7 +660,34 @@ export const teams = [
     headCoach: "Shane Steichen",
     superBowls: 2,
     ultimoRecord: "8-9-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ind.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Indianapolis Colts?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Clasificaron los Colts a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿De qué ciudad se mudaron los Colts a Indianapolis?",
+        opciones: ["Cleveland", "Baltimore", "St. Louis", "Los Angeles"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué legendario QB jugó para los Colts y ganó el Super Bowl XLI?",
+        opciones: ["Jim Harbaugh", "Andrew Luck", "Peyton Manning", "Johnny Unitas"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué edad tenía Philip Rivers cuando volvió del retiro en 2025?",
+        opciones: ["40", "42", "44", "46"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "titans",
@@ -517,7 +706,34 @@ export const teams = [
     headCoach: "Robert Saleh",
     superBowls: 0,
     ultimoRecord: "3-14-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ten.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Tennessee Titans?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Titans a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿De qué ciudad y con qué nombre llegaron los Titans a Tennessee?",
+        opciones: ["Baltimore Colts", "Houston Oilers", "Los Angeles Raiders", "St. Louis Cardinals"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A cuántas yardas de ganarlo todo quedaron en el Super Bowl del 2000?",
+        opciones: ["1 yarda", "3 yardas", "5 yardas", "10 yardas"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Contra qué equipo fue el increíble primer touchdown de Cam Ward en la NFL?",
+        opciones: ["Seattle Seahawks", "San Francisco 49ers", "Los Angeles Rams", "Dallas Cowboys"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "eagles",
