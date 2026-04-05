@@ -164,11 +164,12 @@ import { teams } from '../data/equipos.js';
 
         cards.forEach((card) => {
           const name = card.dataset.name;
+          const link = card.parentElement;
           if (name.includes(query)) {
-            card.style.display = 'flex';
+            link.style.display = 'block';
             visibles++;
           } else {
-            card.style.display = 'none';
+            link.style.display = 'none';
           }
         });
 

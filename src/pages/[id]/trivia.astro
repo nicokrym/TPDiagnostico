@@ -21,7 +21,7 @@ if (!team) {
     <title>Trivia - {team.nombreCompleto}</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
-    <style>
+    <style is:global>
       * {
         font-family: 'Inter', sans-serif;
         margin: 0;
@@ -81,27 +81,109 @@ if (!team) {
         font-weight: 400;
         margin-bottom: 3rem;
       }
+
+      #resultado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 2rem;
+        margin-top: 5rem;
+      }
+      
+      #puntaje {
+        font-size: 6rem;
+        font-weight: 900;
+        line-height: 1;
+      }
+
+      #subtitulo {
+        font-size: 1.2rem;
+        color: rgba(255,255,255,0.4);
+      }
     </style>
   </head>
   <body>
-    <button class="back-btn" onclick="history.back()">Volver</button>
+    <button id="volver-btn" class="back-btn" onclick="history.back()">Volver</button>
     <h1>Trivia</h1>
     <h2>{team.nombreCompleto}</h2>
     <p id="pregunta"></p>
-    <div class="opciones" id="opciones"></div>
+    <div id="opciones"></div>
+    <div id="resultado" style="display: none;">
+      <p id="puntaje"></p>
+      <p id="subtitulo">de 5 preguntas</p>
+      <button class="back-btn" id="reiniciar-btn">Jugar de nuevo</button>
+      <button class="back-btn" onclick="history.back()">Volver al equipo</button>
+    </div>
   </body>
   <script define:vars={{ trivia: team.trivia }}>
-    const q = trivia[0];
+    let current = 0;
+    let score = 0;
 
-    document.getElementById('pregunta').textContent = q.pregunta;
+    function cargarPregunta() {
+      const q = trivia[current];
 
-    const opcionesDiv = document.getElementById('opciones');
+      document.getElementById('pregunta').textContent = q.pregunta;
 
-    q.opciones.forEach((opcion) => {
-      const btn = document.createElement('button');
-      btn.textContent = opcion;
-      opcionesDiv.appendChild(btn);
-      btn.className = 'opcion';
-    });
+      const opcionesDiv = document.getElementById('opciones');
+      opcionesDiv.innerHTML = '';
+
+      q.opciones.forEach((opcion, index) => {
+        const btn = document.createElement('button');
+        btn.textContent = opcion;
+        btn.className = 'opcion';
+        btn.onclick = () => responder(index);
+        opcionesDiv.appendChild(btn);
+      });
+    }
+
+    function mostrarResultado() {
+      document.getElementById('opciones').style.display = 'none';
+      document.getElementById('pregunta').style.display = 'none';
+      document.getElementById('resultado').style.display = 'block';
+      document.getElementById('puntaje').textContent = score;
+      document.getElementById('volver-btn').style.visibility = 'hidden';
+    }
+
+    function reiniciar() {
+      current = 0;
+      score = 0;
+      document.getElementById('resultado').style.display = 'none';
+      document.getElementById('pregunta').style.display = 'block';
+      document.getElementById('opciones').style.display = 'block';
+      document.getElementById('volver-btn').style.visibility = 'visible';
+      cargarPregunta();
+    }
+
+    document.getElementById('reiniciar-btn').onclick = reiniciar;
+
+    function responder(index) {
+      const q = trivia[current];
+      const botones = document.querySelectorAll('.opcion');
+      botones.forEach(btn => btn.disabled = true);
+
+      if (index === q.correcta) {
+        botones[index].style.backgroundColor = '#1a4a2e';
+        botones[index].style.color = '#2ecc71';
+        score++;
+      } else {
+        botones[index].style.backgroundColor = '#4a1a1a';
+        botones[index].style.color = '#e74c3c';
+        botones[q.correcta].style.backgroundColor = '#1a4a2e';
+        botones[q.correcta].style.color = '#2ecc71';
+      }
+
+      setTimeout(() => {
+        current++;
+        if (current < trivia.length) {
+          cargarPregunta();
+        } else {
+          mostrarResultado();
+        }
+      }, 1200);
+    }
+
+    cargarPregunta();
   </script>
 </html>
