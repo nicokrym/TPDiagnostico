@@ -979,7 +979,7 @@ export const teams = [
     estadio: "Lumen Field",
     headCoach: "Mike Macdonald",
     superBowls: 2,
-    ultimoRecord: "14-3",
+    ultimoRecord: "14-3-0",
     logo: "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png"
   },
   {

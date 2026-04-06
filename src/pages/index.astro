@@ -1,5 +1,4 @@
 ---
-import Carousel from '../components/Carrusel.astro';
 import { teams } from '../data/equipos.js';
 ---
 
@@ -9,7 +8,7 @@ import { teams } from '../data/equipos.js';
     <title>NFL Teams</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet" />
-    <style>
+    <style is:global>
       * {
         font-family: 'Inter', sans-serif;
         margin: 0;
@@ -23,13 +22,11 @@ import { teams } from '../data/equipos.js';
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding: 3rem;
       }
       
       h1 {
         color: white;
         font-size: 2.5rem;
-        padding: 0 3rem !important;
         text-shadow: 2px 2px 6px rgba(255,255,255,0.1);
       }
 
@@ -41,7 +38,6 @@ import { teams } from '../data/equipos.js';
         border-radius: 10px;
         text-decoration: none;
         margin-bottom: 1rem;
-        margin-right: 3rem;
         font-size: 1rem;
         transition: background-color 0.2s ease;
       }
@@ -51,10 +47,83 @@ import { teams } from '../data/equipos.js';
       }
 
       .header {
+        padding: 3rem 3rem 0 3rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 100%;
+      }
+
+      select {
+        appearance: none;
+        cursor: pointer;
+        border: none;
+      }
+
+      #carrusel-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        padding: 2rem 0;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+      }
+
+      #carrusel-wrapper::-webkit-scrollbar {
+        display: none;
+      }
+
+      #carrusel-wrapper::-webkit-scrollbar-track {
+        background: transparent;
+      }
+
+      #carrusel-wrapper::-webkit-scrollbar-thumb {
+        background: rgba(255,255,255,0.3);
+        border-radius: 10px;
+      }
+
+      #carrusel {
+        display: flex;
+        gap: 1.5rem;
+        padding: 1rem 3rem;
+        width: max-content;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 280px;
+        height: 380px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: transform 0.2s ease;
+        padding: 2rem;
+        box-sizing: border-box;
+      }
+
+      .card:hover {
+        transform: scale(1.05);
+      }
+
+      .card img {
+        width: 150px;
+        height: 150px;
+        object-fit: contain;
+      }
+
+      .card h2 {
+        color: white;
+        font-size: 1.8rem;
+        margin: 1rem 0 0.3rem;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+      }
+
+      .card p {
+        color: white;
+        font-size: 1rem;
+        opacity: 0.85;
+        text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
       }
 
     </style>
@@ -62,8 +131,79 @@ import { teams } from '../data/equipos.js';
   <body>
     <div class="header">
       <h1>La NFL y sus equipos: el catálogo.</h1>
-      <a href="/buscar" class="btn">🔍 Buscar equipo</a>
+      <div style="display: flex; gap: 0.5rem; align-items: center;">
+        <select id="ordenar" class="btn">
+          <option value="record-asc" selected>Mejor record</option>
+          <option value="record-desc">Peor record</option>
+          <option value="az">A - Z</option>
+          <option value="za">Z - A</option>
+          <option value="division">División</option>
+        </select>
+        <a href="/buscar" class="btn">🔍 Buscar equipo</a>
+      </div>
     </div>
-    <Carousel teams={teams} />
+    <div id="carrusel-wrapper">
+      <div id="carrusel"></div>
+    </div>
   </body>
+  <script define:vars={{ teams }}>
+    function renderCarrusel(lista) {
+      const carrusel = document.getElementById('carrusel');
+      carrusel.innerHTML = '';
+
+      lista.forEach((team) => {
+        const a = document.createElement('a');
+        a.href = `/${team.id}/`;
+        a.style.textDecoration = 'none';
+
+        const card = document.createElement('div');
+        card.className = 'card';
+        card.style.backgroundColor = team.colores.principal;
+
+        const img = document.createElement('img');
+        img.src = team.logo;
+        img.alt = team.nombre;
+
+        const nombre = document.createElement('h2');
+        nombre.textContent = team.nombre;
+
+        const record = document.createElement('p');
+        record.textContent = team.ultimoRecord;
+
+        card.appendChild(img);
+        card.appendChild(nombre);
+        card.appendChild(record);
+        a.appendChild(card);
+        carrusel.appendChild(a);
+      });
+    }
+
+    const ordenadoPorRecord = [...teams].sort((a, b) => parseInt(b.ultimoRecord) - parseInt(a.ultimoRecord));
+    renderCarrusel(ordenadoPorRecord);
+
+    document.getElementById('ordenar').addEventListener('change', (e) => {
+      let ordenado = [...teams];
+
+      if (e.target.value === 'az') {
+        ordenado.sort((a, b) => a.nombreCompleto.localeCompare(b.nombreCompleto));
+      } else if (e.target.value === 'za') {
+        ordenado.sort((a, b) => b.nombreCompleto.localeCompare(a.nombreCompleto));
+      } else if (e.target.value === 'record-asc') {
+        ordenado.sort((a, b) => parseInt(b.ultimoRecord) - parseInt(a.ultimoRecord));
+      } else if (e.target.value === 'record-desc') {
+        ordenado.sort((a, b) => parseInt(a.ultimoRecord) - parseInt(b.ultimoRecord));
+      } else if (e.target.value === 'division') {
+        const orden = ['AFC East', 'AFC North', 'AFC South', 'AFC West', 'NFC East', 'NFC North', 'NFC South', 'NFC West'];
+        ordenado.sort((a, b) => {
+          const divA = `${a.conferencia} ${a.division}`;
+          const divB = `${b.conferencia} ${b.division}`;
+          return orden.indexOf(divA) - orden.indexOf(divB);
+        });
+      } else {
+        ordenado = [...teams];
+      }
+
+      renderCarrusel(ordenado);
+    });
+  </script>
 </html>
