@@ -1120,7 +1120,34 @@ export const teams = [
     headCoach: "Dave Canales",
     superBowls: 0,
     ultimoRecord: "8-9-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/car.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/car.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Carolina Panthers?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Panthers a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Con qué superheroe apodan al icónico QB Cam Newton?",
+        opciones: ["Batman", "Hulk", "Iron Man", "Superman"],
+        correcta: 3
+      },
+      {
+        pregunta: "¿En qué año disputaron el Super Bowl con Newton?",
+        opciones: ["2014", "2015", "2016", "2017"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿De qué universidad fue drafteado Bryce Young?",
+        opciones: ["Syracuse", "USC", "LSU", "Alabama"],
+        correcta: 3
+      },
+    ],
   },
   {
     id: "buccaneers",
@@ -1139,7 +1166,34 @@ export const teams = [
     headCoach: "Todd Bowles",
     superBowls: 2,
     ultimoRecord: "8-9-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/tb.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Tampa Bay Buccaneers?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Buccaneers a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué legendario QB firmó con los Bucs en 2020 y los llevó al Super Bowl?",
+        opciones: ["Tom Brady", "Baker Mayfield", "Peyton Manning", "Jameis Winston"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Quién igualó el récord de años con +1000 yardas aéreas de Jerry Rice?",
+        opciones: ["Justin Jefferson", "Chris Godwin", "Mike Evans", "Antonio Brown"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Dónde estaba Baker Mayfield antes de ir a jugar a los Buccaneers?",
+        opciones: ["Los Angeles Rams", "Carolina Panthers", "New York Jets", "Cleveland Browns"],
+        correcta: 0
+      },
+    ],
   },
   {
     id: "falcons",
@@ -1158,7 +1212,34 @@ export const teams = [
     headCoach: "Kevin Stefanski",
     superBowls: 0,
     ultimoRecord: "8-9-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/atl.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Atlanta Falcons?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Buccaneers a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Quién era el QB de los Falcons en el Super Bowl LI?",
+        opciones: ["Kirk Cousins", "Baker Mayfield", "Michael Penix Jr", "Matt Ryan"],
+        correcta: 3
+      },
+      {
+        pregunta: "¿Por cuántos puntos llegó a ir ganando Atlanta el Super Bowl LI?",
+        opciones: ["25", "28", "20", "30"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Qué icónico WR jugó en los Falcons en la década del 2010?",
+        opciones: ["Julio Jones", "Jaxon Smith-Njigba", "Devonta Smith", "Antonio Brown"],
+        correcta: 0
+      },
+    ],
   },
   {
     id: "saints",
@@ -1177,7 +1258,34 @@ export const teams = [
     headCoach: "Kellen Moore",
     superBowls: 1,
     ultimoRecord: "6-11-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/no.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/no.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los New Orleans Saints?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Clasificaron los Saints a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿En qué año ganaron los Saints su único Super Bowl?",
+        opciones: ["2000", "2006", "2009", "2010"],
+        correcta: 3
+      },
+      {
+        pregunta: "¿Quién fue el legendario QB que los guió a su victoria en el Super Bowl XLIV?",
+        opciones: ["Brett Favre", "Drew Brees", "Kirk Cousins", "Russel Wilson"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Con qué pick draftearon a Tyler Shough en 2025?",
+        opciones: ["40", "33", "37", "52"],
+        correcta: 0
+      },
+    ],
   },
   {
     id: "seahawks",
@@ -1196,7 +1304,34 @@ export const teams = [
     headCoach: "Mike Macdonald",
     superBowls: 2,
     ultimoRecord: "14-3-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/sea.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Seattle Seahawks?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Seahawks a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Quién ganó el Offensive Player of the Year en 2025?",
+        opciones: ["Jaxon Smith-Njigba", "Sam Darnold", "Kenneth Walker III", "Justin Jefferson"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Cómo se llamaba la icónica defensa de los Seahawks a principios de los 2010?",
+        opciones: ["D-stroyers", "Legion of Boom", "D-hawks", "Sherman and the Boys"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿De qué universidad fue drafteado Jaxon Smith-Njigba?",
+        opciones: ["Ohio State", "Alabama", "FSU", "Texas"],
+        correcta: 0
+      },
+    ],
   },
   {
     id: "rams",
@@ -1215,7 +1350,34 @@ export const teams = [
     headCoach: "Sean McVay",
     superBowls: 2,
     ultimoRecord: "12-5",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/lar.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Los Angeles Rams?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Rams a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿A qué edad consiguió finalmente Stafford ganar el Super Bowl?",
+        opciones: ["32", "33", "34", "35"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué famoso Defensive Tackle se retiró con los Rams en 2024?",
+        opciones: ["Jason Kelce", "Aaron Donald", "Jeffery Simmons", "Lawrence Taylor"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cuál es el nombre de pila del WR Nacua?",
+        opciones: ["Tika", "John", "Pika", "Puka"],
+        correcta: 3
+      },
+    ],
   },
   {
     id: "49ers",
@@ -1234,7 +1396,34 @@ export const teams = [
     headCoach: "Kyle Shanahan",
     superBowls: 5,
     ultimoRecord: "12-5",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/sf.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los San Francisco 49ers?",
+        opciones: ["2", "3", "4", "5"],
+        correcta: 3
+      },
+      {
+        pregunta: "¿Clasificaron los 49ers a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Con qué pick draftearon al QB Brock Purdy en 2022?",
+        opciones: ["1", "199", "224", "262"],
+        correcta: 3
+      },
+      {
+        pregunta: "¿Quién era el Defensive Coordinator del equipo en 2025 que ahora es head coach en otro equipo?",
+        opciones: ["Robert Saleh", "Mike Vrabel", "Kyle Shanahan", "Dennard Wilson"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿De qué universidad fue drafteado George Kittle?",
+        opciones: ["Iowa State", "Iowa", "Missouri", "Vanderbilt"],
+        correcta: 1
+      },
+    ],
   },
   {
     id: "cardinals",
@@ -1253,6 +1442,33 @@ export const teams = [
     headCoach: "Mike LaFleur",
     superBowls: 0,
     ultimoRecord: "3-14",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/ari.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Arizona Cardinals?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Cardinals a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Con qué pick draftearon al QB Kyler Murray en 2019?",
+        opciones: ["1", "5", "7", "11"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Qué legendario WR jugó en el equipo en la década del 2010?",
+        opciones: ["Anquan Boldin", "Larry Fitzgerald", "Tim Dwight", "Randy Moss"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A qué equipo le remontaron el icónico divisional en enero de 2016?",
+        opciones: ["San Francisco 49ers", "Atlanta Falcons", "Green Bay Packers", "Carolina Panthers"],
+        correcta: 2
+      },
+    ],
   },
 ];
