@@ -1,46 +1,17 @@
-# Astro Starter Kit: Basics
+La NFL y sus Equipos: el Catálogo.
 
-```sh
-npm create astro@latest -- --template basics
-```
+El catálogo es sencillo y cuenta con las siguientes partes: una página inicial que nos muestra todos los equipos, los cuales son ordenables a nuestro gusto (alfabetico, más victorias, etc.) y, desde la pagina de buscar equipo, filtrables por nombre; podemos clickear en la card de un equipo para acceder a información detallada y tenemos la opción de jugar una trivia personalizada de cada equipo.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Herramientas usadas:
+Conocimientos previos de HTML, JS, CSS.
+Conocimientos previos de la NFL.
+Claude.ai para ir aprendiendo a usar astro, automatizar tareas y buscar/cheaquear información.
+Wikipedia y Google para buscar y chequar información.
+Adjunto chat de Claude (me quedé sin uso gratis al final y tuve que terminar el equipos.js a mano): https://claude.ai/share/99f0411d-9c7b-4474-bfa8-35e338cacab3
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Instrucciones para ejecutarlo:
+Abrir la terminal y buscar la carpeta TPDiagnostico.
+Poner npm i (sólo la primera vez).
+Poner npm run dev.
+Abrir el local host que te tira en la teminal en algun browser.
+Gozar sin límites.
