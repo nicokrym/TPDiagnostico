@@ -752,7 +752,34 @@ export const teams = [
     headCoach: "Nick Sirianni",
     superBowls: 2,
     ultimoRecord: "11-6-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/phi.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Philadelphia Eagles?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Clasificaron los Eagles a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿De qué universidad fue drafteado Jalen Hurts?",
+        opciones: ["Alabama", "Georgia", "Oklahoma", "LSU"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿De qué jugaba el histórico Jason Kelce?",
+        opciones: ["Tackle", "Guard", "Center", "Tight End"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿En qué año ganaron los Eagles su primer Super Bowl?",
+        opciones: ["2016", "2017", "2018", "2019"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "cowboys",
@@ -771,7 +798,34 @@ export const teams = [
     headCoach: "Brian Schottenheimer",
     superBowls: 5,
     ultimoRecord: "7-9-1",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/dal.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Dallas Cowboys?",
+        opciones: ["3", "4", "5", "6"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Cowboys a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Cowboys en la década del 90?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué receptor actual usa el icónico número de receptores de los Cowboys?",
+        opciones: ["George Pickens", "Brandin Cooks", "CeeDee Lamb", "Amari Cooper"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué famoso QB ganó 3 Super Bowls con los Cowboys en los 90s?",
+        opciones: ["Roger Staubach", "Danny White", "Tony Romo", "Troy Aikman"],
+        correcta: 3
+      },
+    ],
   },
   {
     id: "commanders",
@@ -790,7 +844,34 @@ export const teams = [
     headCoach: "Dan Quinn",
     superBowls: 3,
     ultimoRecord: "5-12-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/was.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/was.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Washington Commanders?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Commanders a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Con qué nombre se conocía al equipo antes de llamarse Commanders?",
+        opciones: ["Washington Warriors", "Washington Redskins", "Washington Braves", "Washington Indians"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué jugador gritó la famosa frase 'You like that?' en 2015?",
+        opciones: ["Robert Griffin III", "Rex Grossman", "Kirk Cousins", "Jason Campbell"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿A qué universidad fue Jayden Daniels?",
+        opciones: ["Alabama", "Georgia", "Ohio State", "LSU"],
+        correcta: 3
+      },
+    ],
   },
   {
     id: "giants",
@@ -809,7 +890,34 @@ export const teams = [
     headCoach: "John Harbaugh",
     superBowls: 4,
     ultimoRecord: "4-13-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/nyg.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los New York Giants?",
+        opciones: ["2", "3", "4", "5"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Giants a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Giants con Eli Manning como QB?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Qué famoso LB es considerado el mejor de la historia de los Giants?",
+        opciones: ["Carl Banks", "Harry Carson", "Lawrence Taylor", "Michael Strahan"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿A qué receptor se le atribuye popularmente la mejor recepción de la historia de la NFL?",
+        opciones: ["Plaxico Burress", "Victor Cruz", "Odell Beckham Jr.", "Amani Toomer"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "bears",
@@ -828,7 +936,34 @@ export const teams = [
     headCoach: "Ben Johnson",
     superBowls: 1,
     ultimoRecord: "11-6-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/chi.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Chicago Bears?",
+        opciones: ["1", "2", "3", "4"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Bears a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Quién fue el único jugador en devolver el kickoff inicial del Super Bowl en la historia?",
+        opciones: ["Dante Hall", "Devin Hester", "Cordarrelle Patterson", "Leon Washington"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Quién fue el icónico head coach de los Bears del 85?",
+        opciones: ["Lovie Smith", "Dave Wannstedt", "Mike Ditka", "Dick Butkus"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿De qué universidad fue drafteado Caleb Williams?",
+        opciones: ["Alabama", "Ohio State", "USC", "Oklahoma"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "packers",
@@ -847,7 +982,34 @@ export const teams = [
     headCoach: "Matt LaFleur",
     superBowls: 4,
     ultimoRecord: "9-7-1",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/gb.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Green Bay Packers?",
+        opciones: ["2", "3", "4", "5"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Clasificaron los Packers a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Con qué comida se asocia a los fanáticos de los Packers?",
+        opciones: ["Hamburguesas", "Queso", "Cerveza", "Salchichas"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cuántos premios MVP ganó Aaron Rodgers en su carrera?",
+        opciones: ["2", "3", "4", "5"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Cuál es el dato novedoso respecto a la propiedad de los Packers?",
+        opciones: ["Son propiedad de la ciudad", "Son propiedad del estado", "Son propiedad de sus fans", "Son propiedad de la NFL"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "vikings",
@@ -866,7 +1028,34 @@ export const teams = [
     headCoach: "Kevin O'Connell",
     superBowls: 0,
     ultimoRecord: "9-8-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/min.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/min.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Minnesota Vikings?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Vikings a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿Cuántas veces fueron los Vikings al Super Bowl sin ganarlo?",
+        opciones: ["2", "3", "4", "5"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué ex WR de los Vikings es considerado uno de los mejores de la historia?",
+        opciones: ["Cris Carter", "Randy Moss", "Stefon Diggs", "Percy Harvin"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿En qué año fue el famoso Minneapolis Miracle?",
+        opciones: ["2016", "2017", "2018", "2019"],
+        correcta: 2
+      },
+    ],
   },
   {
     id: "lions",
@@ -885,7 +1074,34 @@ export const teams = [
     headCoach: "Dan Campbell",
     superBowls: 0,
     ultimoRecord: "9-8-0",
-    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/det.png"
+    logo: "https://a.espncdn.com/i/teamlogos/nfl/500/det.png",
+    trivia: [
+      {
+        pregunta: "¿Cuántos Super Bowls ganaron los Detroit Lions?",
+        opciones: ["0", "1", "2", "3"],
+        correcta: 0
+      },
+      {
+        pregunta: "¿Clasificaron los Lions a playoffs en la temporada 2025?",
+        opciones: ["Sí", "No"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿A quién draftearon los Lions con el pick #1 overall en 2009?",
+        opciones: ["Sam Bradford", "Mark Sanchez", "Matthew Stafford", "Jared Goff"],
+        correcta: 2
+      },
+      {
+        pregunta: "¿Qué famoso RB jugó para los Lions en los 90s?",
+        opciones: ["Emmitt Smith", "Barry Sanders", "Thurman Thomas", "Marshall Faulk"],
+        correcta: 1
+      },
+      {
+        pregunta: "¿De qué universidad fue drafteado Jared Goff?",
+        opciones: ["Stanford", "USC", "UCLA", "Cal"],
+        correcta: 3
+      },
+    ],
   },
   {
     id: "panthers",
